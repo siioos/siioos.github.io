@@ -4,18 +4,57 @@
   <meta charset="UTF-8">
   <title>Home</title>
   <style>
-    body { font-family: Arial, sans-serif; text-align: center; }
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      color: #f5f5f5;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      /* Dark + Light Fantasy Gradient Background */
+      background: radial-gradient(circle at top left, #4b0082, #000000 40%),
+                  radial-gradient(circle at bottom right, #e6e6fa, #2e0854 70%);
+      background-blend-mode: screen;
+    }
+
+    nav {
+      margin: 20px 0;
+    }
+
     nav a {
       margin: 10px;
+      padding: 10px 15px;
       text-decoration: none;
-      color: blue;
+      color: #fff;
       font-weight: bold;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
     }
-    nav a:hover { color: darkred; }
+
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.2);
+      color: #ffccff;
+      box-shadow: 0 0 15px #ffccff, 0 0 30px #9932cc;
+    }
+
+    h1 {
+      text-shadow: 0 0 10px #9932cc, 0 0 20px #ffccff;
+    }
+
+    p {
+      max-width: 600px;
+      text-shadow: 0 0 5px #000;
+    }
   </style>
 </head>
 <body>
-  <h1>Welcome to Home Page</h1>
+  <h1>Welcome to the Home Page</h1>
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -24,6 +63,6 @@
     <a href="contact.html">Contact</a>
     <a href="faq.html">FAQ</a>
   </nav>
-  <p>This is the homepage of your website.</p>
+  <p>This is the homepage of your fantasy-themed website.</p>
 </body>
 </html>
